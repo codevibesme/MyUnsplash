@@ -15,7 +15,8 @@ export const addPhoto = async (req, res) => {
         const { label } = req.body;
         const newImage = new Image({label});
         const savedImage = await newImage.save();
-        res.status(200).json({image: savedImage});
+        console.log(savedImage);
+        res.status(200).json({savedImage});
     } catch(err){
         res.status(403).json({error: err});
     }
