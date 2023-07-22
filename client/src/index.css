@@ -19,7 +19,7 @@ code {
   padding: 0 1%;
   border-radius: 12px;
   border: 1px solid lightgray;
-  height: 100px;
+  height: 100%;
 }
 .header{
  width: 100%; 
@@ -42,9 +42,88 @@ code {
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.10);
  
 }
+.addPhoto:active{
+  cursor: pointer;
+  scale: 0.98;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.10);
+}
 .searchBar{
   display: flex;
   align-items: flex-end;
-  width: 100%;
   height: 55px;
+}
+.modal{
+  width: 620px;
+  height: 367.2049560546875px;
+  border-radius: 12px;
+  padding: 24px 32px;
+}
+.modal > .title{
+  font-size: 33px;
+  font-weight: 500;
+  text-align: start;
+  color: #333333;
+}
+label.label{
+  font-size: 19px;
+  text-align: start;
+  font-weight: 500px;
+  color: #4F4F4F;
+}
+label.photo{
+  font-size: 19px;
+  text-align: start;
+  font-weight: 500px;
+  color: #4F4F4F;
+}
+input {
+  height:55px;
+  width:430px;
+  font-size:19px;
+  color: #BDBDBD;
+  border:1px solid #4F4F4F;
+  border-radius:12px;
+  text-align:start;
+  background-color: white;
+}
+.submit{
+  width: 105px;
+  height: 55px;
+  border-radius: 12px;
+  border: 0px ;
+  cursor: pointer;
+  background-color: #3DB46D;
+  color: white;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.10);
+}
+.submit:active{
+  scale: 0.98;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.10);
+}
+.close{
+  width: 105px;
+  height: 55px;
+  border-radius: 12px;
+  border: 0px ;
+  cursor: pointer;
+  background-color: white;
+  color: #BDBDBD;
+}
+.btns{
+  margin-top: 20px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+main{
+  margin: 1%;
+  padding: 2%;
+}
+.imageListItemBar{
+  visibility: hidden;
+  border-radius: 16px;
+}
+.imageListItem:hover .imageListItemBar{
+  visibility: visible;
 }
