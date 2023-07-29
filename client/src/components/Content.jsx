@@ -12,7 +12,7 @@ const Content = () => {
     const handleDelete = async (_id) => {
     
         console.log(_id);
-        const response = await fetch(`http://localhost:8000/photo/${_id}`, {
+        const response = await fetch(`https://myunsplashsoham.onrender.com/photo/${_id}`, {
                 method:"DELETE",
             }
         );
@@ -40,8 +40,8 @@ const Content = () => {
                                 }
                             />
                             <img className='images'
-                                src={`http://localhost:8000/uploads/${item.picturePath}?w=248&fit=crop&auto=format`} 
-                                srcSet={`http://localhost:8000/uploads/${item.picturePath}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                src={`https://myunsplashsoham.onrender.com/uploads/${item.picturePath}?w=248&fit=crop&auto=format`} 
+                                srcSet={`https://myunsplashsoham.onrender.com/uploads/${item.picturePath}?w=248&fit=crop&auto=format&dpr=2 2x`}
                                 alt={item.label}
                                 loading="lazy"
                                 id={item._id}

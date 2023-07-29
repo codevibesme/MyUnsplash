@@ -8,7 +8,7 @@ function App() {
   const dispatch = useDispatch();
 
   const getPhotos = async(state)=>{
-    const response  = await fetch("http://localhost:8000/photo", {
+    const response  = await fetch("https://myunsplashsoham.onrender.com/photo", {
         method:"GET"
     });
     const photos = await response.json();

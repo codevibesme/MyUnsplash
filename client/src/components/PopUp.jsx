@@ -23,7 +23,7 @@ export const AddPhotoPopup = () => {
         }
         close();
         try{
-            const response = await fetch("http://localhost:8000/photo/add", {
+            const response = await fetch("https://myunsplashsoham.onrender.com/photo/add", {
                 method:"POST",
                 body: file
             });
